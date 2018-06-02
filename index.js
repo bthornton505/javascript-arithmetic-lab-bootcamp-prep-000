@@ -1,15 +1,12 @@
-var b;
-var a;
-
-function add(a, b) {
+function add(a, b){
   return a + b;
 }
 
-function subtract(a, b) {
-  return a - b;
+function subtract(b, a) {
+  return b - a;
 }
 
-function multiply(a, b) {
+function multiply(a, b){
   return a * b;
 }
 
@@ -17,13 +14,12 @@ function divide(a, b){
   return a / b;
 }
 
-function inc(n){
-  return n+= 1;
+function inc(a){
+  return a+= 1;
 }
 
-function dec(n){
-  n = n - 1;
-  return n--;
+function dec(a){
+  return a-= 1;
 }
 
 function makeInt(n){
@@ -31,5 +27,5 @@ function makeInt(n){
 }
 
 function preserveDecimal(n){
-  return parseFloat(n);
+  return parseFloat(n, 10);
 }
